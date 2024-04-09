@@ -70,66 +70,82 @@ body{
     cursor: pointer;
 }
 
-/*TABLE*/
-.header1{
-    grid-column: 2 / SPAN 10;
-    margin-top: 50px;
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
+/* Each Post */
+.news_container{
+    display: grid; 
+    grid-column: 2/12;
+    grid-template-columns: auto auto; 
+    background-color: rgb(16, 16, 16);
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid; 
+    border-color: #31313183;
 }
-
-
+/* Picture and Title */
+.news_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-column: span 2;
+}
+.news_header .title{
+    margin-left: 20px;
+}
+.news_container img{
+    width: 60px;
+    height: 60px; 
+    border-radius: 50%;
+}
+.news_container .title{
+    grid-column: span 2;
+}
+/* Post Content */
+.news_container .content{
+    margin-top: 20px;
+    grid-column: span 2;
+}
+.news_container a{
+    text-decoration: none; 
+    color: yellow;
+    z-index: 2;
+}
+/* Headers */
 h1{
     font-size: 20px;
     font-weight: 500;
     color: white;
-}
-
+}   
 h2{
     font-size: 10px;
     font-weight: 300;
     color: yellow;
 }
-
 h3{
     font-size: 15px;
     font-weight: 350;
     color: white;
 }
-
-table{
-    grid-column: 2 / span 10;
-    grid-row: auto;
-    grid-row: auto;
-    width: auto;
-    height: auto;
-    padding: 40px;
-    margin-top: 30px;
-    background-color: rgb(16, 16, 16);
-    border-radius: 10px;
-    display: grid;
-    border: 1px solid; 
-    border-color: #31313183;
-
+/* Learn More Hover Animation */
+.hover_link {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
 }
-
-table img{
-    width: 60px;
-    height: auto;
+.hover_link:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(65, 64, 0, 0.803);
+    transition: width 0.5s ease-in-out;
+    z-index: -1;
 }
-
-table td{
-    vertical-align: left;
-    text-align: justify;
+.hover_link:hover:after {
+    width: 100%;
 }
-
-@media screen and (max-width: 550px){
-table img{
-    display: none;
-}
-}
-
 
 /* FOOTER */
 .footer{
