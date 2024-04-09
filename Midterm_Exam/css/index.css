@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    font-family: Roboto Mono;
+}
+body{
+    height: 100vh;
+    
+    animation: slide 20s linear infinite;
+}
+.container{  /*container*/
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(100px,auto);
+}
+@keyframes slide {
+    0% {
+        background: black;
+        color: white;
+    }
+    20% {
+        background: rgb(255, 0, 0);
+    }
+    40% {
+        background: rgb(255, 251, 0);
+        color: black;
+    }
+    65% {
+        background: rgb(0, 251, 29);
+    }
+    80% {
+        background: rgb(2, 0, 79);
+        color: white;
+    }
+    100% {
+        background: rgb(0, 0, 2);
+        color: white;
+    }
+}
