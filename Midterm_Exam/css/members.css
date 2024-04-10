@@ -93,6 +93,9 @@ body{
     margin: 5px;
     transform: scale(1.0);
     transition: all 0.3s;
+    border: solid 2px yellow;
+
+    box-shadow: 2px 2px 20px black;
 }
 .pic{
     display: flex;
@@ -123,6 +126,8 @@ body{
     margin: 5px;
     transform: scale(1.0);
     transition: all 0.3s;
+    border: solid 2px yellow;
+    box-shadow: 2px 2px 20px black;
 }
 .item3{
     grid-column: 5/7;
@@ -133,6 +138,8 @@ body{
     margin: 5px;
     transform: scale(1.0);
     transition: all 0.3s;
+    border: solid 2px yellow;
+    box-shadow: 2px 2px 20px black;
 }
 .item4{
     grid-column: 7/9;
@@ -143,6 +150,8 @@ body{
     margin: 5px;
     transform: scale(1.0);
     transition: all 0.3s;
+    border: solid 2px yellow;
+    box-shadow: 2px 2px 20px black;
 }
 .item5{
     grid-column: 9/11;
@@ -153,6 +162,8 @@ body{
     margin: 5px;
     transform: scale(1.0);
     transition: all 0.3s;
+    border: solid 2px yellow;
+    box-shadow: 2px 2px 20px black;
 }
 .item6{
     grid-column: 3/7;
@@ -163,6 +174,8 @@ body{
     margin: 5px;
     transform: scale(1.0);
     transition: all 0.3s;
+    border: solid 2px yellow;
+    box-shadow: 2px 2px 20px black;
 }
 .item7{
     grid-column: 7/11;
@@ -173,6 +186,9 @@ body{
     margin: 5px;
     transform: scale(1.0);
     transition: all 0.3s;
+
+    border: solid 2px yellow;
+    box-shadow: 2px 2px 20px black;
 }
 .item:hover,
 .item1:hover,
@@ -213,7 +229,22 @@ body{
     }
 }
 
-
+.divider{
+    background-color: yellow;
+    filter: brightness(50%);
+    position: relative;
+    grid-column: 2/4;
+    z-index: -1;
+    top: 50%;
+}
+.divider1{
+    background-color: yellow;
+    filter: brightness(70%);
+    z-index: -1;
+    position: relative;
+    grid-column: 12/13;
+    grid-row: 9/11;
+}
 /* FOOTER */
 .footer{
     grid-column: 1/13;
