@@ -52,7 +52,7 @@ body{
     width: 100px;
     transition: transform 0.3s;
 }
-.navigation_1 .active{
+.navigation_2 .active{
     color: yellow;
     border-bottom: solid 2px;
 }
