@@ -10,7 +10,7 @@ body{
 .container{ 
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-auto-rows: minmax(100px,auto);
+    grid-auto-rows: minmax(100px, auto);
 }
 
 /*left side navigation*/
@@ -68,6 +68,46 @@ body{
     color: yellow;
     border-bottom: solid 2px;
     cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.hamburger-menu div {
+    width: 2rem;
+    height: 0.35rem;
+    background-color: #333; /* or any color you prefer */
+}
+
+@media (max-width: 1100px) {
+    .hamburger-menu {
+        display: flex;
+        padding-right: 40px;
+    }
+    .navigation_1 a, .navigation_2 a {
+        display: none;
+    }
+    .navigation_1{
+        grid-column: 3/8;
+        grid-row: 1;
+    }
+    .navigation_2{
+        grid-column: 8/13;
+        justify-content: right;
+    }
+    .header{
+        grid-column:1/3;
+        padding-left: 10px;
+    }
+    .b_context img {
+        height: 300px;
+        width: 300px;
+    }
 }
 
 
@@ -136,6 +176,7 @@ hr{
     padding: 5rem;
     box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.952);
     text-align: center;
+    z-index: 1;
 }
 .contact h1{
     font-size: 60px;
@@ -176,13 +217,35 @@ button:hover{
     transform: translateY(-3px);
 }
 
+@media screen and (max-width: 1100px) {
+    .contact {
+        grid-column: 2/12; 
+        grid-row: 3/7; 
+    }
+    .info {
+        grid-column: 2/12;
+        grid-row: 8/12; 
+    }
+    .footer{
+        grid-row: 13/15;
+        grid-column: 1/13;
+    }
+    .divider{
+        grid-row: 2/13;
+    }
+}
 
-
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.info, .contact{
+    animation: fadeIn 0.2s ease-in-out;
+}
 
 /* FOOTER */
 .footer{
     grid-column: 1/13;
-    grid-row: 9/11;
     background-color: rgb(15, 15, 15);
     display: flex;
     justify-content: center;

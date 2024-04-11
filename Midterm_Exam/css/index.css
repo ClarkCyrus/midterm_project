@@ -17,13 +17,12 @@ body{
     text-align: center;
     letter-spacing: 10px;
     animation: txt_1 10s linear infinite, blurr 2s;
-
     z-index: 1;
 
-    
+ 
 }
 .background_2 h1{
-    font-size: 120px;
+    font-size: 100px;
 }.background_2 p{
     font-size: 30px;
 }
@@ -42,7 +41,7 @@ body{
     letter-spacing: 2px;
 }
 .background_3 h1{
-    font-size: 150px;
+    font-size: 110px;
     -webkit-text-stroke-width: 2px;
     
 }
