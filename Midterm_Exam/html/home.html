@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Zenith Esports</title>
     <link rel = "icon" href ="../assets/common/logo.jpg" type = "image/x.icon">
     <link rel="stylesheet" href="../css/home.css">
@@ -27,11 +29,19 @@
             <a href="../html/news.html" >NEWS</a>
             <a href="../html/contacts.html" >CONTACTS</a>
             <a href="../html/developers.html" >DEVELOPERS</a>
-            <div class="hamburger-menu" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id="myLinks">
+            <a href="../html/home.html">HOME</a>
+            <a href="../html/about.html">ABOUT</a>
+            <a href="../html/objective.html">OBJECTIVES</a>
+            <a href="../html/update.html">UPDATES</a>
+            <a href="../html/members.html">MEMBERS</a>
+            <a href="../html/news.html">NEWS</a>
+            <a href="../html/contacts.html">CONTACTS</a>
+            <a href="../html/developers.html">DEVELOPERS</a>
         </div>
         
         <div class="a_context">
@@ -63,18 +73,18 @@
                     Zenith embodies excellence in strategic gameplay and teamwork. 
                     As they embark on thrilling inter-school tournaments, the ZENITH team's reputation
                     precedes them, striking fear into the hearts of opponents.</p>
-                <a href="../html/about.html"><button>EXPLORE NOW</button></a>
+                <a href="about.html"><button>EXPLORE NOW</button></a>
                 </div>
             </div>
 
-            <div class="valorant"><a href="../html/about.html#valo">
-                <h1>VALORANT</h1></a>
+            <div class="valorant">
+                <a href="../html/about.html#valo"><h1>VALORANT</h1></a>
             </div>
-            <div class="lol"><a href="../html/about.html#lol">
-                <h1>LEAGUE OF LEGENDS</h1></a>
+            <div class="lol">
+                <a href="../html/about.html#lol"><h1>LEAGUE OF LEGENDS</h1></a>
             </div>
-            <div class="ml"><a href="../html/about.html#ml">
-                <h1>MOBILE LEGENDS</h1></a>
+            <div class="ml">
+                <a href="../html/about.html#ml"><h1>MOBILE LEGENDS</h1></a>
             </div>
 
             <div class="footer">
@@ -90,5 +100,17 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            function toggleMenu() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+
     </body>
     </html>
