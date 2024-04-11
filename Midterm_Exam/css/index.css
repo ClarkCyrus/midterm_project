@@ -13,7 +13,7 @@ body{
 }
 .background_2{
     grid-column: 3/11;
-    grid-row: 3/5;
+    grid-row: 2/5;
     text-align: center;
     letter-spacing: 10px;
     animation: txt_1 10s linear infinite, blurr 2s;
@@ -28,7 +28,7 @@ body{
 }
 .background_3{
     grid-column: 3/11;
-    grid-row: 5/6;
+    grid-row: 4/8;
     color: transparent;
     animation: txt_2 10s linear infinite,blurr2 2s;
 

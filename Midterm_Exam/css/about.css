@@ -3,7 +3,8 @@
     font-family: Roboto Mono;
 }
 body{
-    background-color: black;    
+    background-color: black;  
+    scroll-behavior: smooth;  
 }
 
 /*container*/
